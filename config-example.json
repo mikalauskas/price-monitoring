@@ -1,0 +1,47 @@
+{
+    "websites": [
+        {
+            "name": "website_name",
+            "url": "https://www.example.com/catalog",
+            "selectors": {
+                "categoryLink": "a:has-text('CATEGORY_NAME')",
+                "itemCards": "[data-meta-name^='productList']",
+                "itemTitle": "[data-meta-name$='productTitle']",
+                "itemPrice": "[data-meta-name$='productPrice']",
+                "nextPageButton": "[data-meta-name$='page-next']"
+            },
+            "categories": [
+                {
+                    "type": "smartphone",
+                    "name": "Smartphones"
+                },
+                {
+                    "type": "notebook",
+                    "name": "Laptops"
+                },
+                {
+                    "type": "monitor",
+                    "name": "Monitors"
+                }
+            ]
+        }
+    ],
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0",
+    "viewport": {
+        "width": 1280,
+        "height": 720
+    },
+    "extraHTTPHeaders": {
+        "sec-ch-ua": "\"Microsoft Edge\";v=\"125\", \"Chromium\";v=\"125\", \"Not.A/Brand\";v=\"24\"",
+        "sec-ch-ua-mobile": "?0",
+        "sec-ch-ua-platform": "\"Windows\""
+    },
+    "globalTimeout": 20000,
+    "clickTimeout": 5000,
+    "networkIdleTimeout": 30000,
+    "itemTimeout": 10000,
+    "nextButtonTimeout": 10000,
+    "enableTracing": true,
+    "traceFilePath": "trace.zip",
+    "screenshotPath": "screenshot"
+}

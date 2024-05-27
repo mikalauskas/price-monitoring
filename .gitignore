@@ -1,0 +1,10 @@
+node_modules
+trace
+trace.zip
+.env
+/*.json
+!/config-example.json
+!/nodemon.json
+!/package.json
+!/package-lock.json
+/*.jpg
